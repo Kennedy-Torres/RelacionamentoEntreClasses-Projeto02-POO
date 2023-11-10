@@ -1,5 +1,3 @@
-package dominio;
-
 import java.util.ArrayList;
 
 
@@ -9,7 +7,6 @@ public class Pessoa {
     private String email;
 // ----------------------------------
     private Endereco endereco;
-    private Telefone telefone;
     private ArrayList<Telefone> telefones = new ArrayList<>();
 
 
@@ -38,7 +35,9 @@ public class Pessoa {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    public ArrayList<Telefone> getTelefones() {
+        return telefones;
+    }
     public void addTelefone(Telefone telefone){
         telefones.add(telefone);
     }

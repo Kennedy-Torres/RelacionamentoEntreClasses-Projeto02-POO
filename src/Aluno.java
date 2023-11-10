@@ -1,5 +1,3 @@
-package dominio;
-
 import java.util.ArrayList;
 
 public class Aluno extends Pessoa{
@@ -43,7 +41,16 @@ public class Aluno extends Pessoa{
 
 
     public void imprimir(){
-        System.out.println("Nome do aluno: "+getNome());
+        System.out.println("Nome do aluno: "+getNome()+", CPF: "+getCpf()+", email: "+getEmail());
+        System.out.println("Telefones:");
+        for (Telefone telefone : getTelefones()) {
+            System.out.println("  - Tipo: " + telefone.getTipo() + ", DDD: " + telefone.getDdd() + ", Número: " + telefone.getNumero());
+        }
+        System.out.println("Endereço:"+
+                "\nEstado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
+
+        System.out.println(" ");
+
         System.out.println("Curso atual: "+getCurso().getNome());
         System.out.println("Nota do aluno em cada disciplina: ");
         for (Disciplina disciplina : getCurso().getDisciplinas()) {

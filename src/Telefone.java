@@ -1,5 +1,3 @@
-package dominio;
-
 public class Telefone {
     private String tipo;
     private String ddd;

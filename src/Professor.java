@@ -1,5 +1,3 @@
-package dominio;
-
 import java.util.ArrayList;
 
 public class Professor extends Pessoa { //herança Pessoa(pai) -> Professor(filho)
@@ -43,9 +41,19 @@ public class Professor extends Pessoa { //herança Pessoa(pai) -> Professor(filh
     }
 
     public void imprimir(){
-        System.out.println("Nome do professor: "+getNome()+ // eh certo fazer isso????? to puxando o nome da pessoa q por sua vez é professor.... não teria q fazer um super e trazer o nome apenas para professor?
-                            "\nSalário: "+getSalario()+
-                            "\nTitulação: "+getTitulacao());
+        System.out.println("Nome do professor: "+getNome()+", CPF: "+getCpf()+", email: "+getEmail()+
+                            "\nSalário: "+getSalario()+", Titulação: "+getTitulacao());
+
+        System.out.println("Telefones:");
+        for (Telefone telefone : getTelefones()) {
+            System.out.println("  - Tipo: " + telefone.getTipo() + ", DDD: " + telefone.getDdd() + ", Número: " + telefone.getNumero());
+        }
+
+        System.out.println("Endereço:"+
+                            "\nEstado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
+
+        System.out.println(" ");
+
         if (disciplina != null) {
             System.out.println("Disciplina Ministrada: " + disciplina.getNome());
         } else {
