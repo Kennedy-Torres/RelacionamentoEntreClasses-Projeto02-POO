@@ -47,7 +47,7 @@ public class Aluno extends Pessoa{
             System.out.println("  - Tipo: " + telefone.getTipo() + ", DDD: " + telefone.getDdd() + ", Número: " + telefone.getNumero());
         }
         System.out.println("Endereço:"+
-                "\nEstado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
+                "\n  - Estado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
 
         System.out.println(" ");
 
@@ -58,5 +58,6 @@ public class Aluno extends Pessoa{
         }
 
         System.out.println(" ");
+        System.out.println("+==========================================================+");
     } // devo fazer a herança(Pessoa-Aluno) e colocar o nome, cpf e email do aluno??
 }

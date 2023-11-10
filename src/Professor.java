@@ -50,7 +50,7 @@ public class Professor extends Pessoa { //herança Pessoa(pai) -> Professor(filh
         }
 
         System.out.println("Endereço:"+
-                            "\nEstado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
+                            "\n  - Estado: "+getEndereco().getEstado()+", Cidade: "+getEndereco().getCidade()+", Rua: "+getEndereco().getRua());
 
         System.out.println(" ");
 
@@ -70,7 +70,6 @@ public class Professor extends Pessoa { //herança Pessoa(pai) -> Professor(filh
         }
 
         System.out.println(" ");
-        System.out.println("FALTA INSERIR O RESTO DOS DADOS");
-        System.out.println(" ");
+        System.out.println("+==========================================================+");
     }
 }

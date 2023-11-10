@@ -46,5 +46,6 @@ public class Curso {
             }
         }
         System.out.println(" ");
+        System.out.println("+==========================================================+");
     }
 }

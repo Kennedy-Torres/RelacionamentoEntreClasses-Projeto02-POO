@@ -78,6 +78,7 @@ public class main {
         prof3.setEmail("professor03@hotmail");
         prof1.setEndereco(end1);
         prof2.setEndereco(end2);
+        prof3.setEndereco(end3);
 
         // muitas disciplinas - muitos cursos
         //Incrementa a disciplina no curso
@@ -90,7 +91,7 @@ public class main {
 
         //Uma disciplina - muitos professores
         prof1.setDisciplina(d1);
-        prof2.setDisciplina(d2);
+        prof2.setDisciplina(d1);
         prof3.setDisciplina(d2);
         prof1.addTelefone(t1);
         prof1.addTelefone(t4);
@@ -134,5 +135,6 @@ public class main {
         // PROFESSOR -> nome, titulação, salário , disciplina, contato (telefone, endereço)
         prof1.imprimir();
         prof2.imprimir();
+        prof3.imprimir();
     }
 }
