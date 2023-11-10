@@ -123,8 +123,8 @@ public class main {
         a3.addTelefone(t4);
 
         // CURSO -> nome,disciplinas disponíveis no curso, disciplinas ministradas por tais professores
-//        c1.imprimirCurso();
-//        c2.imprimirCurso();
+        c1.imprimirCurso();
+        c2.imprimirCurso();
 
         // ALUNO -> nome, curso atual, disciplinas do aluno( disciplinas disponíveis no curso), nota do aluno em cada disciplina
         a1.imprimir();
@@ -132,7 +132,7 @@ public class main {
         a3.imprimir();
 
         // PROFESSOR -> nome, titulação, salário , disciplina, contato (telefone, endereço)
-//        prof1.imprimir();
-//        prof2.imprimir();
+        prof1.imprimir();
+        prof2.imprimir();
     }
 }
